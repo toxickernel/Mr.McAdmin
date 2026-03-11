@@ -11,6 +11,8 @@ tmux unzip PHP 8.3
 ```
 Update the 2nd line of each bash file changing cd /home/anthony/mc/ to your own server directory.
 
+Update start.bash and change the "paper-1.21.11-126.jar" to your appropriate jar file.
+
 ## Usage
 
 ```bash
