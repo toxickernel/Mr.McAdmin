@@ -1,8 +1,10 @@
 #!/bin/bash
+DATE=$(date +"%Y-%m-%d")
+BACKUP_NAME="world-$DATE.zip"
 cd /home/anthony/mc/
 tmux send-keys -t mc.0 "/say &c SERVER BACKING UP ..." ENTER
 
-zip -r "world.zip" ./world
+zip -r "$BACKUP_NAME" ./world
 
 tmux send-keys -t mc.0 "/say &c SERVER BACKED UP ... " ENTER
 
